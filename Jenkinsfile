@@ -2,9 +2,10 @@
 
 pipeline {
     agent {
-        image "maven-3.6.3-openjdk-11"
-        label "docker"
-        
+        docker {
+            image "maven-3.6.3-openjdk-11"
+            label "docker"
+        }
     }
 
     tools {
